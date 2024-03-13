@@ -414,7 +414,7 @@ header .navbar ul li a:hover{
 }
 @keyframes cpp{
     100%{
-        width: 90%;
+        width: 50%;
     }
 }
 
@@ -424,7 +424,7 @@ header .navbar ul li a:hover{
 }
 @keyframes dsa{
     100%{
-        width: 20%;
+        width: 0%;
     }
 }
 .skills .row .progress .java .anim{
@@ -433,7 +433,7 @@ header .navbar ul li a:hover{
 }
 @keyframes java{
     100%{
-        width: 100%;
+        width: 0%;
     }
 }
 .skills .row .progress .python .anim{
@@ -442,7 +442,7 @@ header .navbar ul li a:hover{
 }
 @keyframes python{
     100%{
-        width: 80%;
+        width: 10%;
     }
 }
 
@@ -452,7 +452,7 @@ header .navbar ul li a:hover{
 }
 @keyframes angular{
     100%{
-        width: 20%;
+        width: 0%;
     }
 }
 .skills .row .progress .html .anim{
@@ -461,7 +461,7 @@ header .navbar ul li a:hover{
 }
 @keyframes html{
     100%{
-        width: 100%;
+        width: 60%;
     }
 }
 
@@ -471,7 +471,7 @@ header .navbar ul li a:hover{
 }
 @keyframes sqli{
     100%{
-        width: 100%;
+        width: 0%;
     }
 }
 .skills .row .progress .dsa .anim{
@@ -480,7 +480,7 @@ header .navbar ul li a:hover{
 }
 @keyframes dsa{
     100%{
-        width: 100%;
+        width: 0%;
     }
 }
 .skills .row .progress .ajava .anim{
@@ -489,7 +489,7 @@ header .navbar ul li a:hover{
 }
 @keyframes ajava{
     100%{
-        width: 90%;
+        width: 0%;
     }
 }
 .skills .row .progress .js .anim{
@@ -498,7 +498,7 @@ header .navbar ul li a:hover{
 }
 @keyframes js{
     100%{
-        width: 100%;
+        width: 20%;
     }
 }
 .skills .row .progress .sql .anim{
@@ -507,7 +507,7 @@ header .navbar ul li a:hover{
 }
 @keyframes sql{
     100%{
-        width: 100%;
+        width: 0%;
     }
 }
 .skills .row .progress .php .anim{
@@ -516,7 +516,7 @@ header .navbar ul li a:hover{
 }
 @keyframes php{
     100%{
-        width: 100%;
+        width: 0%;
     }
 }
 .skills .row .progress .js .anim{
@@ -525,7 +525,7 @@ header .navbar ul li a:hover{
 }
 @keyframes js{
     100%{
-        width: 90%;
+        width: 20%;
     }
 }
 .skills .row .progress .cjava .anim{
@@ -534,7 +534,7 @@ header .navbar ul li a:hover{
 }
 @keyframes cjava{
     100%{
-        width: 100%;
+        width: 0%;
     }
 }
 /* skills section ends */
