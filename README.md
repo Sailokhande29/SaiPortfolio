@@ -1,12 +1,12 @@
-# Dr. Yogesh Deshmukh's Portfolio Website
+# Mr.Lokhande Sai's Portfolio Website
 
 ## Introduction
 
-Welcome to Dr. Yogesh Deshmukh's Portfolio Website! This website showcases the skills, projects, study material and experiences of Dr. Yogesh Deshmukh.
+Welcome to Mr. Lokhande Sai's Portfolio Website! This website showcases the skills, projects, study material and experiences of Mr.Lokhande Sai.
 
-## About Dr. Yogesh Deshmukh
+## About Mr.Lokhande Sai
 
-Dr. Yogesh Deshmukh is a passionate and dedicated Teacher. 
+Mr.Lokhande Sai is a Student, innovator and Maker. 
 
 ## Technologies Used
 
