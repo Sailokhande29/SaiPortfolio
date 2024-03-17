@@ -1,0 +1,6 @@
+header .Project .name{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-right: 10px;
+}
