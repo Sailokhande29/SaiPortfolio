@@ -129,6 +129,7 @@ header .navbar ul li a:hover{
 .home .heading
 {
     text-align: center;
+    padding-top: 0px;
     font-size: 4rem;
     padding: 1rem;
     border-bottom: 2px dotted purple;
