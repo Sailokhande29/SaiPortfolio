@@ -126,9 +126,14 @@ header .navbar ul li a:hover{
     padding: 0 15rem;
     /* padding 15rem from right  */
 }
-.home h1{
-    font-size: 2.2rem;
-    color:purple ;
+.home .heading
+{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 2px dotted purple;
+    color: #333;
+    margin: 0 5rem;
 }
 /* home section ends */
 
