@@ -70,16 +70,6 @@ header{
     z-index: 1000;
 }
 
-
-header .user img{
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 1.2rem;
-    margin-bottom: .5rem;
-    border: .6rem solid rgb(89, 49, 232);
-}
 header .user .name{
     font-size: 3rem;
     color: rgb(89, 49, 232);
