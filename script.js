@@ -60,8 +60,3 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 reveal();
-var type = new Typed('.typing.text', {
-  strings: ['Hand Gesture Car Using Arduino'],
-  typeSpeed: 120,
-  loop: true
-});
