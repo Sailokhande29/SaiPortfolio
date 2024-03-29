@@ -3,6 +3,11 @@ var type = new Typed('.typing-text', {
   typeSpeed: 120,
   loop: true
 });
+var type = new Typed('.typing.text', {
+  strings: ['Hand Gesture Car Using Arduino'],
+  typeSpeed: 120,
+  loop: true
+});
 
 $(document).ready(function () {
   $('#menu').click(function () {
