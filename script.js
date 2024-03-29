@@ -58,5 +58,10 @@ function reveal() {
     }
   }
 }
+var type = new Typed('.typing_text', {
+  strings: ['Student','Maker', 'Innovator','Programmer'],
+  typeSpeed: 120,
+  loop: true
+});
 window.addEventListener("scroll", reveal);
 reveal();
