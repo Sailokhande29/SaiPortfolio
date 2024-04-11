@@ -1,5 +1,5 @@
 var type = new Typed('.typing-text', {
-  strings: ['Student','Maker', 'Innovator','Programmer'],
+  strings: ['Hand Gesture Car Using Arduino'],
   typeSpeed: 120,
   loop: true
 });
