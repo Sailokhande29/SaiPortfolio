@@ -167,6 +167,8 @@ header .navbar ul li a:hover{
     color:rgb(68, 24, 230) ;
     padding: 1rem 0;
     font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center;
 }
 .about .row .info h3 span{
     color: black;
