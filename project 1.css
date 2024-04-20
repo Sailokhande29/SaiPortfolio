@@ -174,8 +174,7 @@ header .navbar ul li a:hover{
 }
 .about .row .image{
     float: right;
-    width: 50%;
-    height: 40%;
+    max-width: 320px;
     
 }
 .about .row .info h3 span{
