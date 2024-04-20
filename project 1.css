@@ -149,6 +149,7 @@ header .navbar ul li a:hover{
     margin: 0 5rem;
     /* it means 5rem margin from left and right */
 }
+
 .about .row{
     display: flex;
     align-items: center;
@@ -160,7 +161,7 @@ header .navbar ul li a:hover{
     flex: 1 1 48rem;
     /* important */
     padding: 2rem 1rem;
-    padding-left: 10rem;
+    padding-left: 50rem;
 }
 .about .row .info h3{
     font-size: 2rem;
