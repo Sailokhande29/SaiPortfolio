@@ -208,53 +208,10 @@ header .navbar ul li a:hover{
 /* About section ends */
 
 /* Education Section strats */
-.education .box-container{
-    display: flex;
+.table{
+    border: 1px;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 3rem;
-}
-.education .box-container .box{
-    width: 35rem;
-    margin: 4rem 2rem;
-    padding: 4rem 2rem;
-    border-left: .2rem solid black;
-    position: relative;
-}
-.education .box-container .box span{
-    font-size: 1.3rem;
-    padding: .5rem 2rem;
-    box-shadow: var(--box-shadow);
-    border-radius: 4rem;
-    background: #ece9e9;
-    border: 1px solid purple;
-}
-.education .box-container .box h3{
-    font-size: 2rem;
-    color: rgb(68, 24, 230);
-    padding-top: 1.5rem;
-}
-.education .box-container .box h4{
-    font-size: 1.3rem;
-    color: black;
-    padding-top: 1rem 0;
-    font-weight: normal;
-    
-}
-.education .box-container .box i{
-    position: absolute;
-    top:-1.5rem;
-    left: -2.5rem;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    line-height: 5rem;
-    font-size: 2rem;
-    background-color: rgb(68, 24, 230);
-    text-align: center;
-    color: #ece9e9;
+    width: 80%;
 }
 
 /* Education section ends */
