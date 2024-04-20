@@ -149,12 +149,6 @@ header .navbar ul li a:hover{
     margin: 0 5rem;
     /* it means 5rem margin from left and right */
 }
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
 
 .about .row{
     display: flex;
@@ -176,7 +170,7 @@ header .navbar ul li a:hover{
     font-weight: normal;
     font-family: 'Times New Roman', Times, serif;
     align-content: center;
-    float: right;
+    float: left;
 }
 .about .row .image{
     float: left;
