@@ -173,7 +173,7 @@ header .navbar ul li a:hover{
     float: left;
 }
 .about .row .image{
-    float: right;
+    float: left;
     max-width: 380px;
     
 }
