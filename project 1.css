@@ -232,9 +232,10 @@ header .navbar ul li a:hover{
     border: 1px solid purple;
 }
 .table{
-    border: 1px;
+    margin-top: 10%;
+    border: 10px;
     align-items: center;
-    width: 80%;
+    width: 50%;
 }
 
 /* Education section ends */
