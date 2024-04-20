@@ -167,7 +167,7 @@ header .navbar ul li a:hover{
     flex: 1 1 48rem;
     /* important */
     padding: 2rem 1rem;
-    padding-left: 50rem;
+    padding-left: 40rem;
 }
 .about .row .info h3{
     font-size: 2rem;
@@ -176,7 +176,7 @@ header .navbar ul li a:hover{
     font-weight: normal;
     font-family: 'Times New Roman', Times, serif;
     align-content: center;
-    float: left;
+    float: right;
 }
 .about .row .image{
     float: right;
