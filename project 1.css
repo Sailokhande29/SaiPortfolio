@@ -161,7 +161,7 @@ header .navbar ul li a:hover{
     flex: 1 1 48rem;
     /* important */
     padding: 2rem 1rem;
-    padding-left: 55rem;
+    padding-left: 50rem;
 }
 .about .row .info h3{
     font-size: 2rem;
