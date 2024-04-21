@@ -233,6 +233,13 @@ header .navbar ul li a:hover{
 }
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
 }
 
 .column {
@@ -240,6 +247,7 @@ header .navbar ul li a:hover{
     padding: 20px;
     border: 1px solid #ccc;
     margin: 10px;
+    text-align: center;
 }
 
 /* Education section ends */
