@@ -250,6 +250,9 @@ header .navbar ul li a:hover{
     text-align: center;
 }
 
+p {
+    font-size: 18px; /* Adjust the font size as needed */
+}
 /* Education section ends */
 
 /* skills section starts */
