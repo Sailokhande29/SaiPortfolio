@@ -479,7 +479,7 @@ header .navbar ul li a:hover{
     animation: html 1.5s linear forwards;
 }
 @keyframes dsa{
-    100%{
+    10%{
         width: 0%;
     }
 }
