@@ -442,7 +442,7 @@ header .navbar ul li a:hover{
 }
 @keyframes python{
     100%{
-        width: 10%;
+        width: 50%;
     }
 }
 
@@ -461,7 +461,7 @@ header .navbar ul li a:hover{
 }
 @keyframes html{
     100%{
-        width: 60%;
+        width: 50%;
     }
 }
 
@@ -479,7 +479,7 @@ header .navbar ul li a:hover{
     animation: html 1.5s linear forwards;
 }
 @keyframes dsa{
-    10%{
+    100%{
         width: 0%;
     }
 }
