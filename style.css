@@ -498,7 +498,7 @@ header .navbar ul li a:hover{
 }
 @keyframes js{
     100%{
-        width: 20%;
+        width: 0%;
     }
 }
 .skills .row .progress .sql .anim{
@@ -525,7 +525,7 @@ header .navbar ul li a:hover{
 }
 @keyframes js{
     100%{
-        width: 20%;
+        width: 0%;
     }
 }
 .skills .row .progress .cjava .anim{
