@@ -68,18 +68,140 @@
     </section>
 
     <section id="code">
-        <h2>Code</h2>
+        <h2>Codes</h2>
         <pre><code>
-// Add your project code here
-// For example, Arduino code or Python script
+            Transmitter Code (Hand Controller):
+            #include <Wire.h>
+                #include <RF24.h>
+                #include <MPU6050.h>
+                
+                MPU6050 mpu;
+                RF24 radio(9, 10);  // CE, CSN
+                const byte address[6] = "00001";
+                int gesture[2];  // For storing gesture data
+                
+                void setup() {
+                  Wire.begin();
+                  mpu.initialize();
+                  radio.begin();
+                  radio.openWritingPipe(address);
+                  radio.setPALevel(RF24_PA_MIN);
+                }
+                
+                void loop() {
+                  int16_t ax, ay, az;
+                  mpu.getAcceleration(&ax, &ay, &az);
+                
+                  if (ax > 15000) {
+                    gesture[0] = 1;  // Forward
+                  } else if (ax < -15000) {
+                    gesture[0] = 2;  // Backward
+                  } else {
+                    gesture[0] = 0;  // Stop
+                  }
+                
+                  if (ay > 15000) {
+                    gesture[1] = 1;  // Right
+                  } else if (ay < -15000) {
+                    gesture[1] = 2;  // Left
+                  } else {
+                    gesture[1] = 0;  // No turn
+                  }
+                
+                  radio.write(&gesture, sizeof(gesture));
+                  delay(100);
+                }
 
-void setup() {
-  // Code setup
-}
+                Reciver Code (Car):
+                #include <RF24.h>
 
-void loop() {
-  // Main code logic
-}
+                    RF24 radio(9, 10);  // CE, CSN
+                    const byte address[6] = "00001";
+                    int gesture[2];  // For storing received gesture data
+                    
+                    // Motor control pins
+                    int in1 = 2;
+                    int in2 = 3;
+                    int in3 = 4;
+                    int in4 = 5;
+                    int ena = 6;
+                    int enb = 7;
+                    
+                    void setup() {
+                      radio.begin();
+                      radio.openReadingPipe(0, address);
+                      radio.setPALevel(RF24_PA_MIN);
+                      radio.startListening();
+                    
+                      pinMode(in1, OUTPUT);
+                      pinMode(in2, OUTPUT);
+                      pinMode(in3, OUTPUT);
+                      pinMode(in4, OUTPUT);
+                      pinMode(ena, OUTPUT);
+                      pinMode(enb, OUTPUT);
+                    }
+                    
+                    void loop() {
+                      if (radio.available()) {
+                        radio.read(&gesture, sizeof(gesture));
+                    
+                        // Forward/Backward control
+                        if (gesture[0] == 1) {
+                          forward();
+                        } else if (gesture[0] == 2) {
+                          backward();
+                        } else {
+                          stopMotors();
+                        }
+                    
+                        // Left/Right control
+                        if (gesture[1] == 1) {
+                          rightTurn();
+                        } else if (gesture[1] == 2) {
+                          leftTurn();
+                        }
+                      }
+                    }
+                    
+                    void forward() {
+                      digitalWrite(in1, HIGH);
+                      digitalWrite(in2, LOW);
+                      digitalWrite(in3, HIGH);
+                      digitalWrite(in4, LOW);
+                      analogWrite(ena, 255);  // Full speed
+                      analogWrite(enb, 255);
+                    }
+                    
+                    void backward() {
+                      digitalWrite(in1, LOW);
+                      digitalWrite(in2, HIGH);
+                      digitalWrite(in3, LOW);
+                      digitalWrite(in4, HIGH);
+                      analogWrite(ena, 255);
+                      analogWrite(enb, 255);
+                    }
+                    
+                    void stopMotors() {
+                      digitalWrite(in1, LOW);
+                      digitalWrite(in2, LOW);
+                      digitalWrite(in3, LOW);
+                      digitalWrite(in4, LOW);
+                    }
+                    
+                    void leftTurn() {
+                      digitalWrite(in1, HIGH);
+                      digitalWrite(in2, LOW);
+                      digitalWrite(in3, LOW);
+                      digitalWrite(in4, HIGH);
+                    }
+                    
+                    void rightTurn() {
+                      digitalWrite(in1, LOW);
+                      digitalWrite(in2, HIGH);
+                      digitalWrite(in3, HIGH);
+                      digitalWrite(in4, LOW);
+                    }
+                    
         </code></pre>
     </section>
 
