@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronics Project</title>
+    <title>Hand Gesture Car With Arduino</title>
     <link rel="stylesheet" href="project 1.css">
 </head>
 <body>
     <header>
-        <h1>Electronics Project: [Project Title]</h1>
+        <h1>Hand Gesture Car With Arduino</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#details">Project Details</a></li>
                 <li><a href="#components">Components Used</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#circuit-diagram">Circuit Diagram</a></li>
                 <li><a href="#trial-video">Trial Video</a></li>
             </ul>
         </nav>
@@ -22,7 +24,27 @@
 
     <section id="details">
         <h2>Project Details</h2>
-        <p>[Brief description of the project. Explain its purpose and functionality.]</p>
+        <p>This project involves creating a hand gesture-controlled robotic car using Arduino microcontrollers, an MPU6050 accelerometer, and NRF24L01 wireless communication modules. The car's movements—forward, backward, left, and right—are controlled by hand gestures, making it an intuitive and fun way to interact with a robotic vehicle.
+
+            <b>CWorking Principle:</b>
+            The system has two main parts: the hand controller and the car.
+            
+            <b>Hand Controller (Transmitter):</b>
+            
+            The MPU6050 sensor, strapped to your hand, detects your hand’s tilt or motion.
+            An Arduino reads the sensor’s data and determines which gesture (like forward, backward, left, or right) corresponds to the motion.
+            The Arduino sends the gesture data wirelessly to the car using the NRF24L01 module.
+            
+            <b>Car (Receiver):</b>
+            
+            The Arduino on the car receives the gesture data through the NRF24L01 module.
+            Based on the data, the Arduino commands a motor driver (like L298N) to control the DC motors of the car, causing it to move in the desired direction.
+            <b>Project Features:</b>
+            <ul>Wireless Control:</ul> The NRF24L01 modules allow long-range wireless communication between the hand controller and the car.
+            <ul>Gesture Recognition:</ul> The MPU6050 sensor interprets hand movements as commands for the car, creating an intuitive control interface.
+            <ul>Real-Time Car Movement:</ul> The car reacts to gestures almost instantly, allowing smooth and responsive control.
+            <b>Applications:</b>
+            This project can be a great introduction to wireless communication, robotics, and motion sensing. It can also serve as a foundation for more advanced gesture-based control systems for robots or drones.</p>
     </section>
 
     <section id="components">
@@ -43,6 +65,27 @@
             <img src="image3.jpg" alt="Project Image 3">
             <!-- Add more images as needed -->
         </div>
+    </section>
+
+    <section id="code">
+        <h2>Code</h2>
+        <pre><code>
+// Add your project code here
+// For example, Arduino code or Python script
+
+void setup() {
+  // Code setup
+}
+
+void loop() {
+  // Main code logic
+}
+        </code></pre>
+    </section>
+
+    <section id="circuit-diagram">
+        <h2>Circuit Diagram</h2>
+        <img src="circuit-diagram.png" alt="Circuit Diagram">
     </section>
 
     <section id="trial-video">

@@ -46,10 +46,6 @@ h2 {
     color: #007bff;
 }
 
-.project-details p {
-    font-size: 1.1em;
-}
-
 ul {
     list-style-type: square;
 }
@@ -80,6 +76,29 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+#code pre {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    white-space: pre-wrap; /* Ensures long code lines wrap */
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#circuit-diagram {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#circuit-diagram img {
+    max-width: 80%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #trial-video {
