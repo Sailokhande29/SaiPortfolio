@@ -61,7 +61,7 @@
             <li><b>DC Motors:</b> To drive the car.</li>
             <li><b>Chassis:</b> For building the car</li>
             <li><b>Battery:</b> To power the car.</li>
-            <li>Jumper Wires, Breadboard, Power Supply for Arduino</li>
+            <li><b>Jumper Wires, Breadboard, Power Supply for Arduino</b></li>
             <!-- Add more components as needed -->
         </ul>
     </section>
@@ -80,9 +80,9 @@
         <h2>Codes</h2>
         <pre><code>
            <b> Transmitter Code (Hand Controller):</b>
-            #include <Wire.h>
-                #include <RF24.h>
-                #include <MPU6050.h>
+            #include Wire.h
+                #include RF24.h
+                #include MPU6050.h
                 
                 MPU6050 mpu;
                 RF24 radio(9, 10);  // CE, CSN
@@ -122,7 +122,7 @@
                 }
 
                <b>Reciver Code (Car):</b>
-                #include <RF24.h>
+                #include RF24.h
 
                     RF24 radio(9, 10);  // CE, CSN
                     const byte address[6] = "00001";
