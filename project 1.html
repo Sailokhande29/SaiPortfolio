@@ -26,7 +26,7 @@
         <h2>Project Details</h2>
         <p>This project involves creating a hand gesture-controlled robotic car using Arduino microcontrollers, an MPU6050 accelerometer, and NRF24L01 wireless communication modules. The car's movements—forward, backward, left, and right—are controlled by hand gestures, making it an intuitive and fun way to interact with a robotic vehicle.
 
-            <b>CWorking Principle:</b>
+            <b>Working Principle:</b>
             The system has two main parts: the hand controller and the car.
             
             <b>Hand Controller (Transmitter):</b>
@@ -70,7 +70,7 @@
     <section id="code">
         <h2>Codes</h2>
         <pre><code>
-            Transmitter Code (Hand Controller):
+           <b> Transmitter Code (Hand Controller):</b>
             #include <Wire.h>
                 #include <RF24.h>
                 #include <MPU6050.h>
@@ -112,7 +112,7 @@
                   delay(100);
                 }
 
-                Reciver Code (Car):
+               <b>Reciver Code (Car):</b>
                 #include <RF24.h>
 
                     RF24 radio(9, 10);  // CE, CSN
