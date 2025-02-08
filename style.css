@@ -600,33 +600,38 @@ header .navbar ul li a:hover{
     padding: 50px 0;
     background-color: #f9f9f9;
 }
-.section-title {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
+.machine-used-section {
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 .machine-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow-x: auto;
     gap: 20px;
 }
-.machine-card {
+.machine {
+    flex-shrink: 0;
+    width: 300px;
     background-color: #fff;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
+}
+.machine h3 {
     text-align: center;
-    transition: transform 0.3s;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
-.machine-card:hover {
-    transform: translateY(-10px);
+.media-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
-.machine-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+img, video {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 .machine-title {
     font-size: 1.5em;
@@ -783,4 +788,3 @@ header .navbar ul li a:hover{
         padding-bottom: 0;
     }
 }
-
