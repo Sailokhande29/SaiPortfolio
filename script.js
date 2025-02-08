@@ -70,19 +70,6 @@ function moveSlide(carouselId, step) {
   track.style.transform = `translateX(-${index * 100}%)`;
   track.setAttribute('data-index', index);
 }
-function moveSlide(carouselId, step) {
-  const track = document.getElementById(carouselId);
-  const totalItems = track.children.length;
-  let index = parseInt(track.getAttribute('data-index')) || 0;
-
-  index += step;
-  if (index < 0) index = totalItems - 1;
-  if (index >= totalItems) index = 0;
-
-  track.style.transform = `translateX(-${index * 100}%)`;
-  track.setAttribute('data-index', index);
-}
-
 // Set an interval to auto-scroll every 3 seconds
 setInterval(autoScroll, 3000);
 window.addEventListener("scroll", reveal);

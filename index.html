@@ -203,46 +203,53 @@
     <!-- my project section ends -->
     <section id="machine">
         <h2 class="section-title">Machines Used</h2>
+        <div class="machine-used-section">
+            <div class="machine-container">
+                <div class="machine">
+                    <h3>Machine 1</h3>
+                    <div class="media-container">
+                        <img src="Sai.jpg" alt="Image 1">
+                        <img src="Sai2.jpg" alt="Image 2">
+                        <video controls>
+                            <source src="trial-video.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="trial-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="machine">
+                    <h3>Machine 2</h3>
+                    <div class="media-container">
+                        <img src="Sai3.jpg" alt="Image 3">
+                        <video controls>
+                            <source src="video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
                 <!-- Instagram Carousel -->
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Machine Used - Instagram Style</title>
-                    <link rel="stylesheet" href="styles.css">
-                </head>
-                <body>
-                
-                    <h2>Machine Used</h2>
-                
-                    <!-- Machine 1 -->
-                    <div class="carousel-container">
-                        <button class="carousel-btn prev" onclick="moveSlide('machine1', -1)">&#10094;</button>
-                        <div class="carousel-track" id="machine1">
-                            <div class="carousel-item"><img src="Sai.jpg" alt="Machine 1 Image 1"></div>
-                            <div class="carousel-item"><img src="Sai2.jpg" alt="Machine 1 Image 2"></div>
-                            <div class="carousel-item"><video controls><source src="trial-video.mp4" type="video/mp4"></video></div>
+                <div class="instagram-carousel">
+                    <h3>Instagram Carousel</h3>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="image1.jpg" alt="Instagram Image 1">
                         </div>
-                        <button class="carousel-btn next" onclick="moveSlide('machine1', 1)">&#10095;</button>
-                    </div>
-                
-                    <!-- Machine 2 -->
-                    <div class="carousel-container">
-                        <button class="carousel-btn prev" onclick="moveSlide('machine2', -1)">&#10094;</button>
-                        <div class="carousel-track" id="machine2">
-                            <div class="carousel-item"><img src="Sai.jpg" alt="Machine 2 Image 1"></div>
-                            <div class="carousel-item"><img src="Sai2.jpg" alt="Machine 2 Image 2"></div>
-                            <div class="carousel-item"><video controls><source src="trial-video.mp4" type="video/mp4"></video></div>
+                        <div class="carousel-item">
+                            <img src="image2.jpg" alt="Instagram Image 2">
                         </div>
-                        <button class="carousel-btn next" onclick="moveSlide('machine2', 1)">&#10095;</button>
+                        <div class="carousel-item">
+                            <img src="image3.jpg" alt="Instagram Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image4.jpg" alt="Instagram Image 4">
+                        </div>
                     </div>
-                
-                    <script src="script.js"></script>
-                
-                </body>
-                </html>
-                       
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+                <!-- Add more machines here -->
+            </div>
+        </div>        
       </section>  
         <!-- my project section ends -->
     <!-- contacts section starts -->
