@@ -263,11 +263,11 @@ header .navbar ul li a:hover{
 .carousel {
     display: flex;
     overflow: hidden;
-    width: 100%;
+    width: 25%;
     border-radius: 8px;
 }
 .carousel-item {
-    min-width: 100%;
+    min-width: 30%;
     transition: transform 0.5s ease;
 }
 .prev, .next {
