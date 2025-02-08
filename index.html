@@ -201,47 +201,28 @@
     </div>
   </section>  
     <!-- my project section ends -->
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machines Used</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <!-- Machine Used section Start -->
-    <section class="machines">
-        <h2>Machines Used</h2>
-
-        <!-- Machine 1 -->
-        <div class="machine">
-            <h3>Machine 1</h3>
-            <div class="machine-gallery" id="machine1">
-                <div class="gallery-item"><img src="Sai.jpg" alt="Machine 1 - Image 1"></div>
-                <div class="gallery-item"><img src="Sai2.jpg" alt="Machine 1 - Image 2"></div>
-                <div class="gallery-item"><video controls><source src="trial-video.mp4" type="video/mp4"></video></div>
-            </div>
-            <button class="prev" onclick="scrollLeft('machine1')">&#10094;</button>
-            <button class="next" onclick="scrollRight('machine1')">&#10095;</button>
+    <section id="machine">
+        <h2 class="section-title">Machines Used</h2>
+        <div class="machine-container">
+          <!-- Machine 1 -->
+          <div class="machine-Card">
+            <img src="hndges.jpg" alt="" class="machine-image">
+            <h3 class="machine-title">Hand Gesture Car with Arduino</h3>
+          </div>
+          <!-- Machine 2 -->
+          <div class="machine-Card">
+            <img src="brainimpact.png" alt="Brain Impact" class="machine-image">
+            <h3 class="machine-title">Brain Impact</h3>
+          </div>
+          <!-- Machine 3 -->
+          <div class="machine-Card">
+            <img src="otto.jpg" alt="Brain Impact" class="machine-image">
+            <h3 class="machine-title">otto</h3>
+          </div>
+          <!-- Add more projects as needed -->
         </div>
-
-        <!-- Machine 2 -->
-        <div class="machine">
-            <h3>Machine 2</h3>
-            <div class="machine-gallery" id="machine2">
-                <div class="gallery-item"><img src="machine2_1.jpg" alt="Machine 2 - Image 1"></div>
-                <div class="gallery-item"><img src="machine2_2.jpg" alt="Machine 2 - Image 2"></div>
-                <div class="gallery-item"><video controls><source src="machine2_video.mp4" type="video/mp4"></video></div>
-            </div>
-            <button class="prev" onclick="scrollLeft('machine2')">&#10094;</button>
-            <button class="next" onclick="scrollRight('machine2')">&#10095;</button>
-        </div>
-    </section>
-</body>
-</html>
-     <!-- Machine Used section ends -->
+      </section>  
+        <!-- my project section ends -->
     <!-- contacts section starts -->
     <section class="contacts" id="contacts">
         <h1 class="heading">Contact Me</h1>
