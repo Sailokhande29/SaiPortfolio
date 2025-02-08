@@ -600,7 +600,7 @@ header .navbar ul li a:hover{
     padding: 50px 0;
     background-color: #f9f9f9;
 }
-.machine-title {
+.section-title {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 30px;
@@ -628,9 +628,10 @@ header .navbar ul li a:hover{
     height: 200px;
     object-fit: cover;
 }
-.project-title {
+.machine-title {
     font-size: 1.5em;
     margin: 15px 0;
+    text-align: center;
 }
 /* contact section strts */
 .contacts .row{
