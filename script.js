@@ -37,45 +37,12 @@ $(document).ready(function () {
   });
 });
 
-// Instagram Carousel Functionality
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("carousel-item");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-function moveSlide(n) {
-    slideIndex += n;
-    if (slideIndex > document.getElementsByClassName("carousel-item").length) {slideIndex = 1}
-    if (slideIndex < 1) {slideIndex = document.getElementsByClassName("carousel-item").length}
-    showSlidesManually();
-}
-
-function showSlidesManually() {
-    let i;
-    let slides = document.getElementsByClassName("carousel-item");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";  
-}
-
 AOS.init({
   duration: 1000,
   once: true,
 });
+
+
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -90,6 +57,30 @@ function reveal() {
       reveals[i].classList.remove("anim");
     }
   }
+}
+function moveSlide(carouselId, step) {
+  const track = document.getElementById(carouselId);
+  const totalItems = track.children.length;
+  let index = parseInt(track.getAttribute('data-index')) || 0;
+
+  index += step;
+  if (index < 0) index = totalItems - 1;
+  if (index >= totalItems) index = 0;
+
+  track.style.transform = `translateX(-${index * 100}%)`;
+  track.setAttribute('data-index', index);
+}
+function moveSlide(carouselId, step) {
+  const track = document.getElementById(carouselId);
+  const totalItems = track.children.length;
+  let index = parseInt(track.getAttribute('data-index')) || 0;
+
+  index += step;
+  if (index < 0) index = totalItems - 1;
+  if (index >= totalItems) index = 0;
+
+  track.style.transform = `translateX(-${index * 100}%)`;
+  track.setAttribute('data-index', index);
 }
 
 // Set an interval to auto-scroll every 3 seconds
