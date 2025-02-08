@@ -610,10 +610,10 @@ h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+/* Machine Container */
 .machine {
     margin-bottom: 40px;
-    position: relative;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -621,12 +621,22 @@ h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+/* Wrapper for Buttons & Gallery */
+.gallery-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+}
+/* Scrollable Gallery */
 .machine-gallery {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
     gap: 10px;
     padding: 10px;
+    width: 100%;
     border-radius: 10px;
     scrollbar-width: none; /* Hide scrollbar for Firefox */
     -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
@@ -640,29 +650,28 @@ h3 {
 }
 .gallery-item img, .gallery-item video {
     width: 100%;
-    height: 300px;
+    height: 400px; /* Adjusted height to match previous design */
     border-radius: 10px;
     object-fit: cover;
     display: block;
 }
-/* Navigation buttons */
+/* Navigation Buttons */
 .prev, .next {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 24px;
     border-radius: 50%;
+    z-index: 10;
 }
 .prev {
-    left: 10px;
+    left: 0;
 }
 .next {
-    right: 10px;
+    right: 0;
 }
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
