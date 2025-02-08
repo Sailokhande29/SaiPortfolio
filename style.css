@@ -594,43 +594,78 @@ header .navbar ul li a:hover{
 .project-link:hover {
     background-color: #0056b3;
 }
-
-/* Projects Section */
-.machine {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+/* machine used section strts */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-.section-title {
+.machines {
     text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-.machine-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-.machine-card {
+    padding: 50px 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s;
 }
-.machine-card:hover {
-    transform: translateY(-10px);
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
-.machine-image {
+.machine {
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.machine-gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+.machine-gallery::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
+}
+.gallery-item {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+.gallery-item img, .gallery-item video {
     width: 100%;
-    height: 200px;
+    height: 300px;
+    border-radius: 10px;
     object-fit: cover;
+    display: block;
 }
-.machine-title {
-    font-size: 1.5em;
-    margin: 15px 0;
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 /* contact section strts */
 .contacts .row{

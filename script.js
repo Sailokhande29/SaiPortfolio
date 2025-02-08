@@ -58,5 +58,11 @@ function reveal() {
     }
   }
 }
+function scrollLeft(machineId) {
+  document.getElementById(machineId).scrollBy({ left: -300, behavior: "smooth" });
+}
+function scrollRight(machineId) {
+  document.getElementById(machineId).scrollBy({ left: 300, behavior: "smooth" });
+}
 window.addEventListener("scroll", reveal);
 reveal();
