@@ -58,11 +58,14 @@ function reveal() {
     }
   }
 }
-function scrollLeft(machineId) {
-  document.getElementById(machineId).scrollBy({ left: -300, behavior: "smooth" });
+let machineContainer = document.querySelector('.machine-container');
+function autoScroll() {
+    machineContainer.scrollBy({
+        left: 200,
+        behavior: 'smooth'
+    });
 }
-function scrollRight(machineId) {
-  document.getElementById(machineId).scrollBy({ left: 300, behavior: "smooth" });
-}
+// Set an interval to auto-scroll every 3 seconds
+setInterval(autoScroll, 3000);
 window.addEventListener("scroll", reveal);
 reveal();
