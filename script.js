@@ -1,39 +1,36 @@
+// Typed.js
 var type = new Typed('.typing-text', {
   strings: ['Student','Maker', 'Innovator','Programmer','Designer','Thinker'],
   typeSpeed: 120,
   loop: true
 });
 
+// Menu and scroll
 $(document).ready(function () {
   $('#menu').click(function () {
     $(this).toggleClass('fa-times');
     $('header').toggleClass('toggle');
   });
+
   $(window).on('scroll load', function () {
     $('#menu').removeClass('fa-times');
     $('header').removeClass('toggle');
-
     if($(window).scrollTop() > 0){
       $('.top').show();
-    }else{
+    } else {
       $('.top').hide();
     }
   });
-  
-  //smooth scroll
+
+  // Smooth scroll
   $('a[href*="#"]').on('click',function(e){
-
-    e.preventDefault();
-
-    $('html, body').animate({
-
-      scrollTop : $($(this).attr('href')).offset().top,
-
-    },
-      1000, 
-      'linear'
-    );
-
+    const anchor = $(this).attr('href');
+    if(anchor.length > 1 && anchor.startsWith('#')) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop : $(anchor).offset().top,
+      }, 1000, 'linear');
+    }
   });
 });
 
@@ -42,8 +39,7 @@ AOS.init({
   once: true,
 });
 
-
-
+// Reveal effect
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
   for (var i = 0; i < reveals.length; i++) {
@@ -58,18 +54,10 @@ function reveal() {
     }
   }
 }
-function moveSlide(carouselId, step) {
-  const track = document.getElementById(carouselId);
-  const totalItems = track.children.length;
-  let index = parseInt(track.getAttribute('data-index')) || 0;
+window.addEventListener("scroll", reveal);
+reveal();
 
-  index += step;
-  if (index < 0) index = totalItems - 1;
-  if (index >= totalItems) index = 0;
-
-  track.style.transform = `translateX(-${index * 100}%)`;
-  track.setAttribute('data-index', index);
-}
+// Carousel Logic
 function moveSlide(trackId, step) {
   const track = document.getElementById(trackId);
   const totalItems = track.children.length;
@@ -83,10 +71,28 @@ function moveSlide(trackId, step) {
   track.setAttribute('data-index', index);
 }
 
-// Auto-scroll both carousels
+// Auto-scroll carousels
 setInterval(() => moveSlide('cert-track', 1), 4000);
 setInterval(() => moveSlide('machine-track', 1), 5000);
-// Set an interval to auto-scroll every 3 seconds
-setInterval(autoScroll, 3000);
-window.addEventListener("scroll", reveal);
-reveal();
+setInterval(() => moveSlide('projects-track', 1), 4200);
+
+// EmailJS sendMail function
+function sendMail() {
+    (function () {
+        emailjs.init("ZMftIU4zwjSjXXAff");
+    })();
+    var params = {
+        sendername: document.querySelector("#sendername").value,
+        phone: document.querySelector("#phone").value,
+        subject: document.querySelector("#subject").value,
+        replyto: document.querySelector("#reply_to").value,
+        message: document.querySelector("#message").value,
+    };
+    var serviceID = "service_n2qdpdd";
+    var templateID = "template_mos01mx";
+    emailjs.send(serviceID, templateID, params)
+        .then(res =>{
+            alert("Email Sent Successfully!");
+        })
+        .catch(()=>{ alert("Error!"); });
+}
