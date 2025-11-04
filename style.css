@@ -788,3 +788,64 @@ img, video {
         padding-bottom: 0;
     }
 }
+/* Carousel Style (Certifications & Machines) */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 95%;
+  margin: auto;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(68, 24, 230, 0.8);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  z-index: 10;
+}
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgb(40, 10, 180);
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Certification Cards */
+.cert-card {
+  flex: 0 0 300px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.cert-card:hover { transform: translateY(-10px); }
+
+/* Machine Section */
+.machine {
+  flex: 0 0 350px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.machine h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: rgb(68, 24, 230);
+  margin-bottom: 1rem;
+}
+.media-container img, .media-container video {
+  width: 100%;
+  border-radius: 10px;
+}

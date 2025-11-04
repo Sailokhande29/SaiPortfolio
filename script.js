@@ -70,6 +70,22 @@ function moveSlide(carouselId, step) {
   track.style.transform = `translateX(-${index * 100}%)`;
   track.setAttribute('data-index', index);
 }
+function moveSlide(trackId, step) {
+  const track = document.getElementById(trackId);
+  const totalItems = track.children.length;
+  let index = parseInt(track.getAttribute('data-index')) || 0;
+
+  index += step;
+  if (index < 0) index = totalItems - 1;
+  if (index >= totalItems) index = 0;
+
+  track.style.transform = `translateX(-${index * 100}%)`;
+  track.setAttribute('data-index', index);
+}
+
+// Auto-scroll both carousels
+setInterval(() => moveSlide('cert-track', 1), 4000);
+setInterval(() => moveSlide('machine-track', 1), 5000);
 // Set an interval to auto-scroll every 3 seconds
 setInterval(autoScroll, 3000);
 window.addEventListener("scroll", reveal);
